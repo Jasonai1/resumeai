@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuatResume AI - Coming Soon</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <style>
+        .coming-soon-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-primary);
+        }
+
+        .coming-soon-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(45deg, var(--primary-blue), #4CAF50);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradient 3s ease infinite;
+        }
+
+        .coming-soon-content p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            color: var(--text-secondary);
+        }
+
+        .launch-date {
+            font-size: 2rem;
+            color: var(--primary-blue);
+            margin-bottom: 2rem;
+            font-weight: bold;
+        }
+
+        .back-button {
+            background: var(--primary-blue);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            display: inline-block;
+            border: none;
+            cursor: pointer;
+        }
+
+        .back-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(33, 150, 243, 0.4);
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">BuatResume AI</div>
+    </nav>
+
+    <section class="hero">
+        <div id="particles-js"></div>
+        <div class="coming-soon-content">
+            <h1>BuatResume AI</h1>
+            <p>Kami sedang mempersiapkan sesuatu yang luar biasa untuk Anda</p>
+            <div class="launch-date">Coming Soon 05/25</div>
+            <a href="index.html" class="back-button">Kembali ke Beranda</a>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
